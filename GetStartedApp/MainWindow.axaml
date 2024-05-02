@@ -2,46 +2,59 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="1500"
-        Height = "1500"
+        mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="900"
+        Height = "900"
         Width = "900"
         x:Class="GetStartedApp.MainWindow"
         Title="QWERTYUIOP">
     <Grid RowDefinitions = "auto, *"
-        ColumnDefinitions = "*, *, auto">
+        ColumnDefinitions = "*, auto,*">
 <!-- Верхняя строчка -->
-        <DockPanel Grid.ColumnSpan="3">
-            <TextBlock Margin = "5 0 0 0">Home</TextBlock>
-            <TextBlock Margin = "10 0 0 0">About</TextBlock>
-            <TextBlock Margin = "10 0 0 0">Blog's Main Topic 1</TextBlock>
-            <TextBlock Margin = "10 0 0 0">Blog's Main Topic 2</TextBlock>
-            <TextBlock Margin = "10 0 0 0">Blog's Main Topic 3</TextBlock>
-            <TextBlock Margin = "10 0 0 0">Associated blogs</TextBlock>
-            <TextBlock Margin="0 0 0 0" DockPanel.Dock="Right" TextAlignment="Right">RSS</TextBlock>
-        </DockPanel>
+        <Border BorderThickness="1" BorderBrush="Black" Grid.ColumnSpan="3">
+            <DockPanel Grid.ColumnSpan="3">
+                <TextBlock Margin = "5 0 0 10">Home</TextBlock>
+                <TextBlock Margin = "5 0 0 0">About</TextBlock>
+                <TextBlock Margin = "5 0 0 0">Blog's Main Topic 1</TextBlock>
+                <TextBlock Margin = "5 0 0 0">Blog's Main Topic 2</TextBlock>
+                <TextBlock Margin = "5 0 0 0">Blog's Main Topic 3</TextBlock>
+                <TextBlock Margin = "5 0 0 0">Associated blogs</TextBlock>
+                <TextBlock Margin="0 0 30 0" DockPanel.Dock="Right" TextAlignment="Right">RSS</TextBlock>
+            </DockPanel>
+        </Border>
 <!-- Левый центр -->
         <StackPanel Grid.Row = "1" Grid.Column = "0" Margin="0 20 0 0" Orientation = "Vertical" Grid.ColumnSpan="2">
             <TextBlock Margin = "5 0 0 0 ">Article 1</TextBlock>
-            <TextBlock TextWrapping = "Wrap" Margin = "5 15 0 0">Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2Article2 Article2 Article2 Article2 Article2</TextBlock>
-                <DockPanel Grid.Row="1" Grid.Column = "0" Margin = "0 5 0 0">
+            <TextBlock TextWrapping = "Wrap" Margin = "5 15 0 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie massa sit amet ornare euismod. Phasellus ornare nisi id rutrum blandit. Suspendisse fringilla vel arcu a tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque auctor pretium mi, ac maximus quam bibendum sit amet. Phasellus hendrerit diam lacus, at blandit felis tristique in. Donec mollis fringilla turpis at malesuada. Curabitur semper ligula erat, nec sollicitudin est vestibulum in.
+
+Suspendisse pellentesque urna nec cursus semper. Vivamus aliquam, sem quis facilisis feugiat, mi velit viverra leo, sed iaculis nunc arcu vel tortor. Nam pharetra volutpat augue, ac luctus odio vulputate id. Integer pellentesque varius mi tempor facilisis. Quisque tortor nisl, suscipit et nunc at, ultricies bibendum felis. Nam consectetur in magna sed feugiat. In hac habitasse platea dictumst. Nam at convallis turpis.
+
+Pellentesque sit amet purus lectus. Nunc lacus nibh, vehicula ac volutpat eleifend, rutrum nec sapien. Curabitur vitae ornare urna. Quisque pretium lorem arcu, in accumsan mauris vehicula quis. Nam gravida, nunc quis vehicula varius, sapien metus aliquam libero, ac blandit magna velit non magna. Integer quis eros et ligula pellentesque porttitor eget tempus velit. Nulla quis faucibus purus. Maecenas nec dolor blandit, vestibulum lacus sit amet, ornare odio.
+
+Nam malesuada risus imperdiet posuere lobortis. Praesent accumsan, dolor tincidunt euismod tempus, diam urna facilisis magna, eget cursus ex nisl non est. Sed finibus volutpat enim, et sagittis nulla ultrices gravida. Aenean mattis dictum felis at pretium. Curabitur rhoncus odio felis, at dignissim leo placerat at. Aliquam dictum cursus neque. Curabitur dapibus vehicula sapien, ut bibendum ipsum aliquet eu. Quisque vel vulputate tellus. Maecenas justo lorem, ultrices eleifend dapibus non, aliquam sodales enim. Aliquam in ligula dignissim, iaculis neque in, dictum arcu. Integer et interdum eros, eu placerat lectus. Morbi sagittis pharetra tortor. Nulla maximus libero et metus iaculis consequat. Cras interdum pretium egestas.
+
+Phasellus consequat nisl vel ex interdum imperdiet. Quisque at suscipit urna. Proin accumsan pellentesque orci at fermentum. Phasellus sed arcu quis ante maximus congue. Cras eleifend, purus eget elementum sagittis, ante massa porttitor metus, facilisis cursus dui nunc non turpis. Morbi id nisl id dolor ornare condimentum. Etiam sed augue dolor. Fusce et consequat nibh, id fringilla magna. Donec lobortis urna sed lorem tempor, et mattis leo laoreet. Fusce in nibh a urna vehicula vulputate. Aliquam erat volutpat.</TextBlock>
+<!-- Картинка-->
+            <Image Source="resm:Avalonia.Skia.Assets.NoiseAsset_256X256_PNG.png?assembly=Avalonia.Skia" Height="256" Width="512" Stretch = "Fill" Margin = "6 0 6 0"></Image>
+<!-- Левый низ-->
+                <DockPanel Grid.Row="1" Grid.Column = "0" Margin = "0 5 0 0" Grid.ColumnSpan = "2">
                     <TextBlock Margin = "5 0 0 0">Tags:</TextBlock>
                     <TextBlock Margin = "5 0 0 0">Tag 1</TextBlock>
                     <TextBlock Margin = "5 0 0 0">Tag 2</TextBlock>
                     <TextBlock Margin = "5 0 0 0">Tag 3</TextBlock>
                     <TextBlock Margin = "5 0 0 0">Tag 4</TextBlock>
-<!-- Левый низ-->
-                    <TextBlock DockPanel.Dock="Right" Margin="0 0 5 0">4/5</TextBlock>
+                    <TextBlock DockPanel.Dock="Right" Margin="0 0 5 0" FontStyle="Italic" FontWeight="Bold">4/5</TextBlock>
                     <TextBlock DockPanel.Dock="Right" TextAlignment="Right" Margin="0 0 10 0">Rate this article</TextBlock>
                 </DockPanel>
         </StackPanel>
+        <Border BorderThickness="200" Grid.Row = "1" Grid.Column = "1"/>
 <!-- Правый центр -->
         <StackPanel Grid.Row = "1" Grid.Column = "2" Orientation = "Vertical">
-            <TextBlock TextWrapping="Wrap" Margin = "0 55 0 0">NORMALNORMALNORMAL</TextBlock>
-            <TextBlock>More</TextBlock>
-            <TextBlock Margin = "0 5 0 0">Yesterday</TextBlock>
-            <TextBlock TextWrapping="Wrap" Margin = "0 10 0 0">NORMALNORMALNORMAL</TextBlock>
-            <TextBlock>More</TextBlock>
-            <TextBlock Margin = "0 5 0 0">Yesterday</TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin = "10 55 5 0">NORMALNORMALNORMALNORMALNORMALNORMALNORMALNORMALNORMALNORMALNORMALNORMALNORMALNORMALNORMAL</TextBlock>
+            <TextBlock TextAlignment="Right" Margin = "0 2 5 0" TextDecorations="Underline">More</TextBlock>
+            <TextBlock Margin = "0 5 5 0" TextAlignment="Right">Yesterday</TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin = "10 10 5 0">GoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGoodGood</TextBlock>
+            <TextBlock TextAlignment="Right" Margin = "0 2 5 0" TextDecorations="Underline">More</TextBlock>
+            <TextBlock Margin = "0 5 5 0" TextAlignment="Right">1 week ago</TextBlock>
         </StackPanel>
     </Grid>
 </Window>
